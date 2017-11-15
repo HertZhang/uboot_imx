@@ -1084,16 +1084,16 @@ struct display_info_t const displays[] = {{
 	.enable = enable_lvds,
 	.mode	= {
 		.name			= "panel1024x600d24",
-		.refresh		= 60,
-		.xres			= 1024, //1024+320=1344
-		.yres			= 600,	//600+35=635
-		.pixclock		= 19528,
-		.left_margin	= 220,	//220+40+60=320
-		.right_margin	= 40,
-		.upper_margin	= 18,	//18+7+10=35
-		.lower_margin	= 7,
-		.hsync_len		= 60,
-		.vsync_len		= 10,
+		.refresh		= 58,
+		.xres			= 1024,
+		.yres			= 600,
+		.pixclock		= 20623,
+		.left_margin	= 147,
+		.right_margin	= 48,
+		.upper_margin	= 6,
+		.lower_margin	= 20,
+		.hsync_len		= 104,
+		.vsync_len		= 6,
 		.sync			= 0,
 		.vmode			= FB_VMODE_NONINTERLACED
 } }, {
