@@ -24,8 +24,8 @@ extern void udelay(unsigned long usec);
 
 struct eeprom_info AT24c02_eeprom;
 #ifdef CONFIG_EEPROM_GPIO_I2C4
-#define GPIO_I2C_SCL	IMX_GPIO_NR(1, 28)
-#define GPIO_I2C_SDA	IMX_GPIO_NR(1, 29)
+#define GPIO_I2C_SCL	IMX_GPIO_NR(1, 3)
+#define GPIO_I2C_SDA	IMX_GPIO_NR(1, 6)
 /*	gpio i2c speed 
 	(5) 100k, 
 	(50) 10k

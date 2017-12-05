@@ -1544,10 +1544,10 @@ int board_init(void)
 	setup_i2c(1, CONFIG_SYS_I2C_SPEED, 0x7f, &i2c_pad_info1);
 
 #ifdef CONFIG_EEPROM_GPIO_I2C4
-	/* GPIO to I2C4  SCL*/
-	imx_iomux_v3_setup_pad(MX6_PAD_ENET_TX_EN__GPIO1_IO28 | MUX_PAD_CTRL(NO_PAD_CTRL));
-	/* GPIO to I2C4 SDA*/
-	imx_iomux_v3_setup_pad(MX6_PAD_ENET_TXD1__GPIO1_IO29 | MUX_PAD_CTRL(NO_PAD_CTRL));
+	/* GPIO to I2C3  SCL*/
+	imx_iomux_v3_setup_pad(MX6_PAD_GPIO_3__GPIO1_IO03 | I2C_PAD | MUX_PAD_CTRL(NO_PAD_CTRL));
+	/* GPIO to I2C3 SDA*/
+	imx_iomux_v3_setup_pad(MX6_PAD_GPIO_6__GPIO1_IO06 | I2C_PAD | MUX_PAD_CTRL(NO_PAD_CTRL));
 #else
 	setup_i2c(2, CONFIG_SYS_I2C_SPEED, 0x7f, &i2c_pad_info2);
 #endif
